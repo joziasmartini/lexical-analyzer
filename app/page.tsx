@@ -57,9 +57,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900">
       <div className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-10 sm:px-6">
-        <header className="flex flex-col items-center gap-2 text-center">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-xs font-medium text-violet-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+        <header className="flex flex-col items-center gap-4 text-center">
+          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600">
+            <span className="h-1.5 w-1.5 rounded-full bg-zinc-400" />
             Compiladores · Projeto 1 · AFD
           </span>
           <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -67,7 +67,7 @@ export default function Home() {
           </h1>
           <p className="max-w-2xl text-sm leading-6 text-zinc-500">
             Reconhece tokens da linguagem a partir de um AFD. Digite o código
-            fonte no editor — a análise é executada em tempo real, produzindo a
+            fonte no editor; a análise é executada em tempo real, produzindo a
             fita de saída, a tabela de símbolos e a lista de erros léxicos.
           </p>
         </header>
@@ -166,7 +166,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-2">
               {fitaTokens.length === 0 && (
                 <span className="font-mono text-xs text-zinc-400">
-                  (sem tokens — aguardando entrada)
+                  (sem tokens, aguardando entrada)
                 </span>
               )}
               {fitaTokens.map((token, i) => {
@@ -288,7 +288,7 @@ export default function Home() {
         </section>
 
         <footer className="border-t border-zinc-200 pt-6 text-center text-xs text-zinc-400">
-          Análise léxica determinística — AFD com estados finais{" "}
+          Análise léxica determinística: AFD com estados finais{" "}
           <span className="font-mono">
             KW_SE, KW_FIM, ID, NUM, OP_ATRIB, OP_SOMA, PONT_PV
           </span>
