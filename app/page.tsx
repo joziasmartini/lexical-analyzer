@@ -79,7 +79,7 @@ export default function Home() {
               <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
               <span className="ml-3 font-mono text-xs text-zinc-500">
-                codigo-fonte.se
+                lexer.ts
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -288,10 +288,7 @@ export default function Home() {
         </section>
 
         <footer className="border-t border-zinc-200 pt-6 text-center text-xs text-zinc-400">
-          Análise léxica determinística: AFD com estados finais{" "}
-          <span className="font-mono">
-            KW_SE, KW_FIM, ID, NUM, OP_ATRIB, OP_SOMA, PONT_PV
-          </span>
+          Desenvolvido por Jozias Martini
         </footer>
       </div>
     </div>
